@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
 header {
 	text-align: center;
 }
@@ -22,7 +28,7 @@ body {
   background-image: url("../images/map1.png");
   padding-bottom: 294px;
   background-repeat: no-repeat;
-  width: 375px;
+  width: 100%;
 
 }
 .top h1{
@@ -31,36 +37,39 @@ body {
     text-align: center;
     padding-top: 41px;
     font-weight: 300;
+    color: #0D0B27
 }
-hr {
+.lines {
 	clear: both;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .route {
   float:left;
-  padding-left: 21px;
+  padding-left: 15px;
 	color: white;
 	font-size: 21px;
 	line-height:2.5em;
-	background-color: #6ca0dc;
+	background-color: #609ce1;
   font-family: 'SF Pro Text';
   font-weight: 500;
   margin: 0 0 0 0;
+  width: 100%;
 
 }
 .arrival {
   float:right;
-  padding-right: 21px;
+  padding-right: 15px;
   padding-left: 208px;
 	color: white;
 	font-size: 21px;
 	line-height: 2.5em;
-	background-color: #6ca0dc;
+	background-color: #609ce1;
   font-family: 'SF Pro Text';
   font-weight: 500;
   margin: 0 0 0 0;
 }
+
 
 
 .busNumber {
@@ -69,7 +78,7 @@ hr {
   color: #0D0B27;
   margin-left: 18px;
   line-height: .1;
-  margin: 20px 0 30px 20px;
+  margin: 20px 0 30px 15px;
 }
 
 .busLine {
@@ -78,9 +87,8 @@ hr {
   font-size: 16px;
   clear: left;
   color: #0D0B27;
-  margin-left: 20px;
   line-height: .1;
-  margin: 0px 0 20px 20px;
+  margin: 0px 0 0px 15px;
 }
 .busChange{
   float: right;
@@ -89,7 +97,7 @@ hr {
   color: #0D0B27;
   margin-right: 20px;
   line-height: .1;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 15px 20px 20px;
   color: red;
 }
 .onTime{
@@ -99,7 +107,7 @@ hr {
   color: #0D0B27;
   margin-right: 20px;
   line-height: .1;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 15px 20px 20px;
   color: green;
 }
 
